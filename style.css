@@ -1,0 +1,60 @@
+/* Reset default styles for lists and remove bullet points */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#problems {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create three equal-width columns */
+    gap: 20px; /* Adjust the gap as needed */
+    justify-content: center; /* Center-align the columns horizontally */
+    align-items: center; /* Center-align vertically */
+    height: auto; /* Set the container height to the full viewport height */
+}
+
+/* Style for the "Check Answers" button */
+.check-button {
+    text-align: center; /* Center-align button text */
+    margin-top: 10px; /* Add margin as needed */
+
+     /* Positioning properties */
+     position: absolute; /* Position absolutely within the nearest positioned ancestor */
+     bottom: 10%; /* Position at the bottom */
+     left: 50%; /* Position horizontally at 50% from the left */
+     transform: translateX(-50%); /* Center the button horizontally */
+}
+
+.problem {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+
+.problem input {
+    width: 50px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    text-align: center;
+    margin: 0 10px; /* Adjust the margin as needed */
+}
+
+/* Style for the checkmark and X icons */
+.check-icon, .x-icon {
+    font-size: 20px;
+    margin-left: -10px; /* Adjust the margin as needed */
+}
